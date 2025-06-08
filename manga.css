@@ -6,15 +6,17 @@ body {
 }
 
 h1 {
-  width: 700px;
+  max-width: 100%;
   margin: 10px auto;
   color: #888;
-  font-size: 1.8em;
+  font-size: clamp(1.5rem, 5vw, 1.8em); /* 画面に応じて可変 */
   line-height: 1.5;
   font-weight: bold;
   border-top: 2px solid #888;
   border-bottom: 2px solid #888;
   background-color: #fff;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 a {
@@ -22,14 +24,8 @@ a {
   text-decoration: underline;
 }
 
-a:hover {
-  color: #000;
-}
-
-a:active {
-  color: #000;
-}
-
+a:hover,
+a:active,
 a:visited {
   color: #000;
 }
@@ -44,15 +40,19 @@ a:visited {
   font-family: monospace, monospace;
   border-radius: 8px;
   max-width: 700px;
+  width: 90%; /* スマホでも90%幅に収まる */
+  box-sizing: border-box;
 }
 
 form.post {
-  width: 700px;
+  width: 90%;
+  max-width: 700px;
   background-color: #eee;
   margin: 10px auto;
   padding: 5px;
   border: 2px solid #222;
   border-radius: 8px;
+  box-sizing: border-box;
 }
 
 form.post a {
@@ -69,11 +69,20 @@ form.post a:hover {
   margin: 42px auto;
 }
 
+.image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 .text {
   background-color: #f8f8f8;
   text-align: left;
   margin: 16px auto;
-  padding: 26px 56px;
-  width: 588px;
+  padding: 26px 20px;
+  width: 90%;
+  max-width: 588px;
   border-radius: 8px;
+  box-sizing: border-box;
 }
