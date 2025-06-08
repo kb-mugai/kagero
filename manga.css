@@ -21,7 +21,7 @@ h1 {
 
 a {
   color: #000;
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 a:hover,
@@ -44,25 +44,27 @@ a:visited {
   box-sizing: border-box;
 }
 
-form.post {
-  width: 90%;
+#comment {
+    width: 90%;
   max-width: 700px;
-  background-color: #eee;
-  margin: 10px auto;
-  padding: 5px;
-  border: 2px solid #222;
-  border-radius: 8px;
   box-sizing: border-box;
+	background-color: #eee;
+	text-align: center;
+	border: 2px solid #222;
+	margin:  10px auto 0 auto;
+	padding: 5px;
+  font-size: 14px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+#comment a {
+  text-decoration: underline;
 }
 
-form.post a {
-  color: #f00;
-  text-decoration: none;
-}
+#comment form.post textarea{
+	width: 80%;
 
-form.post a:hover {
-  color: #fff;
-  background-color: #f00;
 }
 
 .image {

@@ -71,14 +71,33 @@
   </div>
 
   <!-- コメント欄 -->
-  <form action="http://neetsha.jp/inside/comment.php" method="post" class="post">
-    <a href="http://neetsha.jp/inside/comment.php?id=15811">〒</a>
-    <input type="hidden" name="methodid" value="1">
-    <input type="hidden" name="id" value="15811">
+<div id="comment">
+  <p>
+    <a href="https://x.com/daftmugai" target="_blank" rel="noopener noreferrer">
+      むーるがい
+    </a>先生に励ましのお便りを送ろう！！
+  </p>
+
+  <script>
+    var comicid = 15811;
+  </script>
+  <script src="https://neetsha.jp/addon/add_menu.js" charset="utf-8"></script>
+  <form action="https://neetsha.jp/inside/comment.php" method="post" class="post" utn>
+    <input type="hidden" name="methodid" value="1" />
+    <input type="hidden" name="id" value="15811" />
     <input type="hidden" name="story" value="4">
-    <input type="text" name="comment" maxlength="256" size="74">
-    <input type="submit" name="submit" value="このページにコメント">
+    <input type="hidden" name="enc" value="0" />
+    <textarea maxlength="256" name="comment" placeholder="ここに感想を書いてください。"></textarea>
+    <p>
+      <label>
+        <input type="checkbox" name="sage" value="1" />sage
+      </label>
+      <input type="submit" name="submit" value="感想を書く" />
+    </p>
   </form>
+
+  <p><a href="https://neetsha.jp/inside/comment.php?id=15811">〒みんなの感想を読む</a></p>
+</div>
 
   <div class="center">
     <a href="matome05.html">次のまとめ 刻人の後編 へ</a><br>
